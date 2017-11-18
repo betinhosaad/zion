@@ -1,0 +1,275 @@
+<!-- Banner -->
+			<section class="banner full">
+				<article>
+					<%= image_tag("slide01.jpg") %>
+					<div class="inner">
+						<header>
+							<h2>Zion Escalada</h2>
+							<p>A primeira academia de escalada indoor do Mato Grosso do Sul</p>
+						</header>
+					</div>
+				</article>
+				<article>
+					<%= image_tag("slide02.jpg") %>
+					<div class="inner">
+						<header>
+							<p>Lorem ipsum dolor sit amet nullam feugiat</p>
+							<h2>Magna etiam</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<%= image_tag("slide03.jpg") %>
+					<div class="inner">
+						<header>
+							<p>Sed cursus aliuam veroeros lorem ipsum nullam</p>
+							<h2>Tempus dolor</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<%= image_tag("slide04.jpg") %>
+					<div class="inner">
+						<header>
+							<p>Adipiscing lorem ipsum feugiat sed phasellus consequat</p>
+							<h2>Etiam feugiat</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<%= image_tag("slide05.jpg") %>
+					<div class="inner">
+						<header>
+							<p>Ipsum dolor sed magna veroeros lorem ipsum</p>
+							<h2>Lorem adipiscing</h2>
+						</header>
+					</div>
+				</article>
+			</section>
+
+		<!-- One -->
+<section id="one" class="wrapper style2">
+				<div class="inner">
+					<header class="align-center">
+						<h2>Sobre a Zion</h2>
+						<p class="special"></p><br></br>
+					</header>
+					
+					<div class="box">
+						<div>
+							<div class="content">
+    <p><span class="image left"><%= image_tag("box1.jpg") %></span>
+        
+        A Zion é um ginásio de escalada em boulder indoor localizada em Campo Grande, MS.
+
+Com vários níveis de dificuldade e técnica, para iniciantes e escaladores experientes. Temos como opção desenvolver um treinamento físico integrado com a escalada, acompanhado pelos nossos professores de educação física, através de uma forma dinâmica e eficiente.
+
+A Zion Escalada Nasceu para promover a paixão da prática do montanhismo, através do encontro entre pessoas, natureza, esporte e aventura, de forma dinâmica e motivacional, voltando às nossas essências através da simplicidade, do bom humor e da alegria, respeitando sempre os limites individuais, o respeito ao próximo, a natureza, a segurança e a ética.</p>
+								
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			
+
+
+		<!-- Two -->
+			<section id="two" class="wrapper style2">
+				<div class="inner">
+					<header class="align-center">
+						<h2>Galeria</h2>
+						<p class="special"></p><br></br>
+					</header>
+					<div class="container">
+						<div class="popup-gallery">
+						<% @slides.each do |slide| %>
+							<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="img-fixed">
+								<%= link_to slide.foto.url do %>
+								<%= image_tag slide.foto.url(), class: "img-responsive" %>
+								<% end %>
+							</div>
+						</div>
+				        <% end %>
+				        </div>
+				       </div> 
+
+				</div>
+			</section>
+			
+			<!-- Three -->
+			<section id="three" class="wrapper style2">
+				<div class="inner">
+					<header class="align-center">
+						<h2><i class=""></i>Horários de Funcionamento</h2>
+						<p class="special"></p><br></br>
+					</header>
+					<div class="row">
+						
+				        <div class="col-md-4 hbox">
+				        	<div class="pricing hover-effect pbox">
+								<div class="pricing-head">
+									<h3><i class="icon fa-calendar"></i>  Segunda / Quarta / Sexta
+									</h3>
+									<span>Manhã</span>
+									<h2><i class="icon fa-clock-o"></i> 08:30h às 11:20h
+									</h2>
+									<span>Tarde</span>
+									<h2><i class="icon fa-clock-o"></i> 16:00h às 21:30h
+									</h2>
+								</div>
+								</div>
+				        </div>
+				        <div class="col-md-4 hbox">
+				        	<div class="pricing hover-effect pbox">
+								<div class="pricing-head">
+									<h3><i class="icon fa-calendar"></i>  Terça / Quinta
+									</h3>
+									<span>Tarde</span>
+									<h2><i class="icon fa-clock-o"></i> 16:00h às 21:30h
+									</h2>
+								</div>
+								</div>
+				        </div>
+				        <div class="col-md-4 hbox">
+				        	<div class="pricing hover-effect pbox">
+								<div class="pricing-head">
+									<h3><i class="icon fa-plus"></i>  Zion Kids
+									</h3>
+									<span>Tarde</span>
+									<h2><i class="icon fa-clock-o"></i> 16:00h às 17:30h
+									</h2>
+								</div>
+								</div>
+				        </div>
+					</div>
+				</div>
+			</section>
+			
+			<!-- Four -->
+			<section id="four" class="wrapper style2">
+				<div class="inner">
+					<header class="align-center">
+						<h2><i class=""></i>Preços e Planos</h2>
+						<p class="special"></p><br></br>
+					</header>
+					<div class="row">
+						<!-- Pricing -->
+						<div class="col-md-3">
+							<div class="pricing hover-effect">
+								<div class="pricing-head">
+									<h3>Mensal
+									</h3>
+									<h4><i>R$</i>160<i>.00</i>
+									</h4>
+								</div>
+								<ul class="pricing-content list-unstyled">
+									<li>
+										ESCALADA + MUSCULAÇÃO : R$ 250,00
+									</li>
+									<li>
+										ESCALADA + NATAÇÃO : R$ 300,00
+									</li>
+									<li>
+										ESCALADA CONVÊNIO : R$ 120,00
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="pricing hover-effect">
+								<div class="pricing-head">
+									<h3>Trimestral
+									</h3>
+									<h4><i>R$</i>140<i>.00</i>
+									</h4>
+								</div>
+								<ul class="pricing-content list-unstyled">
+									<li>
+										ESCALADA + MUSCULAÇÃO : R$ 220,00
+									</li>
+									<li>
+										ESCALADA + NATAÇÃO : R$ 265,00
+									</li>
+									<li>
+										ESCALADA CONVÊNIO : R$ 105,00
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="pricing hover-effect">
+								<div class="pricing-head">
+									<h3>Semestral
+									</h3>
+									<h4><i>R$</i>120<i>.00</i>
+									</h4>
+								</div>
+								<ul class="pricing-content list-unstyled">
+									<li>
+										ESCALADA + MUSCULAÇÃO : R$ 190,00
+									</li>
+									<li>
+										ESCALADA + NATAÇÃO : R$ 240,00
+									</li>
+									<li>
+										ESCALADA CONVÊNIO : R$ 90,00
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="pricing hover-effect">
+								<div class="pricing-head">
+									<h3>Anual
+									</h3>
+									<h4><i>R$</i>100<i>.00</i>
+									</h4>
+								</div>
+								<ul class="pricing-content list-unstyled">
+									<li>
+										ESCALADA + MUSCULAÇÃO : R$ 160,00
+									</li>
+									<li>
+										ESCALADA + NATAÇÃO : R$ 220,00
+									</li>
+									<li>
+										ESCALADA CONVÊNIO : R$ 75,00
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+		
+					</div>
+				</div>
+		<!--//End Pricing -->
+					</div>
+				</div>
+			</section>
+			
+			
+			
+			
+			
+			
+			
+			
+			<script>
+	$('.popup-gallery').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Loading image #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+	});
+</script>
